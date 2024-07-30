@@ -1,0 +1,221 @@
+body {
+    font-family: 'Nunito', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.brand-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.nav span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.checkout {
+    text-align: right;
+}
+
+.checkout a {
+    text-decoration: none;
+    color: #ff385c;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.hotel-list h1 {
+    margin-bottom: 20px;
+}
+
+.hotels {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.hotel {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    padding: 10px;
+}
+
+.hotel:hover {
+    transform: translateY(-10px);
+}
+
+.hotel img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.hotel-info {
+    text-align: left;
+}
+
+.hotel-info p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.hotel-info button {
+    background-color: #ff385c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.hotel-info button:hover {
+    background-color: #e63950;
+}
+
+footer {
+    background-color: #f7f7f7;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+
+.footer-column {
+    flex: 1;
+}
+
+.footer-column h3 {
+    margin-top: 0;
+}
+
+.footer-column p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.footer-note {
+    text-align: center;
+    padding: 10px;
+    background-color: #f7f7f7;
+    font-size: 14px;
+    border-top: 1px solid #ddd;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    animation: slide-in 0.5s ease;
+    font-family: 'Nunito', Arial, sans-serif;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#proceed-to-payment {
+    background-color: #ff385c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.2s;
+}
+
+#proceed-to-payment:hover {
+    background-color: #e63950;
+}
+
+@keyframes slide-in {
+    from {
+        top: -50px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+.modal-content div {
+    margin-bottom: 10px;
+}
