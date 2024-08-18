@@ -4,7 +4,7 @@ let pricePerNight = 0;
 function bookHotel(hotelName, price) {
     selectedHotel = hotelName;
     pricePerNight = price;
-    document.getElementById('selected-hotel').innerText = Selected Hotel: ${selectedHotel};
+    document.getElementById('selected-hotel').innerText = `Selected Hotel: ${selectedHotel}`;
     document.getElementById('total-price').innerText = pricePerNight;
     openModal();
 }
